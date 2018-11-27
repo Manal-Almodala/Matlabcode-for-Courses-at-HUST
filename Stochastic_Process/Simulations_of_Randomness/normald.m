@@ -1,0 +1,12 @@
+clc,clear
+x=[-5:0.1:5];
+y1=normpdf(x,2,1);
+y2=normcdf(x,0,1);
+subplot(2,1,1)
+plot(x,y1)
+xlim([-6,6]);
+title('正态分布密度函数')
+subplot(2,1,2)
+plot(x,y2)
+xlim([-6,6]);
+title('正态分布分布函数')
